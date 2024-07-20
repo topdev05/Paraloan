@@ -31,7 +31,7 @@ export const FormTextField = <FormObj extends FieldValues>({
         focus:border-primary-300 focus:outline-none
         ${formState.errors[field] ? "border-errors-600" : ""}
         `}
-        id={label}
+        id={field}
         type="text"
         {...register(field)}
         onChange={(e) => handleInputChange(field, e.target.value)}
